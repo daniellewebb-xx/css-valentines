@@ -1,0 +1,49 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<!-- <meta http-equi="refresh" content="5"> -->
+	<title>CSS Valentines</title>
+	<link type="image/png" href="images/favicon.png" rel="icon">
+	<link rel="stylesheet" href="style.css">
+	<link href='http://fonts.googleapis.com/css?family=Love+Ya+Like+A+Sister|Loved+by+the+King' rel='stylesheet' type='text/css'>
+	<meta property="og:image" content="http://cssvalentines.com/images/og-vday.jpg"/>
+	<meta property="og:url" content="http://cssvalentines.com/"/>
+	<meta property="og:title" content="CSS Valentines"/>
+	<meta property="og:description" content="Send some love to the developer in your life this Valentine's Day with this nerdy, CSS-inspired generator."/>
+	<script type="text/javascript"> 
+
+	// for a floating point number, pass true in the function call. for an integer, pass false. in this case, an integer is what you need 
+	function randomRange (minVal, maxVal, floatVal) { 
+		var randVal = minVal + (Math.random () * (maxVal - minVal)); 
+		return (!floatVal) ? Math.round (randVal) : randVal.toFixed (floatVal); 
+	}
+	</script> 
+</head>
+<body>
+	<script type="text/javascript"> 
+
+	// setup pages to randomize 
+	var pages = new Array ("1.html", "2.html", "3.html","4.html","5.html","6.html","7.html", "8.html", "9.html","10.html","11.html","12.html"); 
+
+	// generate random number (javascript doesn't allow you to start an array at 1 so we have to start at zero) 
+	var randomPage = randomRange (0, pages.length - 1, false); 
+
+	var $baseUrl = "http://cssvalentines.com/";
+	// var $baseUrl ="http://localhost:8888/cssValentines/"
+	
+	// redirect 
+	window.location.href = $baseUrl + pages[randomPage]; 
+
+	// analytics
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-48031618-1', 'cssvalentines.com');
+  ga('send', 'pageview');	
+
+	</script>
+</body>
+</html>

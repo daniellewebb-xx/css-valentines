@@ -1,0 +1,404 @@
+article,aside,details,figcaption,figure,footer,header,hgroup,nav,section,summary{display:block;}audio,canvas,video{display:inline-block;}audio:not([controls]){display:none;height:0;}[hidden]{display:none;}html{font-family:sans-serif;-webkit-text-size-adjust:100%;-ms-text-size-adjust:100%;}a:focus{outline:thin dotted;}a:active,a:hover{outline:0;}h1{font-size:2em;}abbr[title]{border-bottom:1px dotted;}b,strong{font-weight:700;}dfn{font-style:italic;}mark{background:#ff0;color:#000;}code,kbd,pre,samp{font-family:monospace, serif;font-size:1em;}pre{white-space:pre-wrap;word-wrap:break-word;}q{quotes:\201C \201D \2018 \2019;}small{font-size:80%;}sub,sup{font-size:75%;line-height:0;position:relative;vertical-align:baseline;}sup{top:-.5em;}sub{bottom:-.25em;}img{border:0;}svg:not(:root){overflow:hidden;}fieldset{border:1px solid silver;margin:0 2px;padding:.35em .625em .75em;}button,input,select,textarea{font-family:inherit;font-size:100%;margin:0;}button,input{line-height:normal;}button,html input[type=button],/* 1 */
+input[type=reset],input[type=submit]{-webkit-appearance:button;cursor:pointer;}button[disabled],input[disabled]{cursor:default;}input[type=checkbox],input[type=radio]{box-sizing:border-box;padding:0;}input[type=search]{-webkit-appearance:textfield;-moz-box-sizing:content-box;-webkit-box-sizing:content-box;box-sizing:content-box;}input[type=search]::-webkit-search-cancel-button,input[type=search]::-webkit-search-decoration{-webkit-appearance:none;}textarea{overflow:auto;vertical-align:top;}table{border-collapse:collapse;border-spacing:0;}body,figure{margin:0;}legend,button::-moz-focus-inner,input::-moz-focus-inner{border:0;padding:0;}
+
+.clearfix:after {
+   content: " ";
+   visibility: hidden;
+   display: block;
+   height: 0;
+   clear: both;
+}
+
+*, *:before, *:after {
+  -moz-box-sizing: border-box; -webkit-box-sizing: border-box; box-sizing: border-box;
+ }
+
+ body {
+	margin: 0;
+	padding: 0;
+	background: beige;
+ }
+
+ h1 {
+ 	font-size: 25px;
+ 	font-family: 'Love Ya Like A Sister', cursive;
+ }
+
+ .wrapper {
+ 	width: 100%;
+ 	padding: 5%;
+}
+
+.interact {
+	margin: -150px auto;
+	width: 40%;	
+}
+
+input.refresh, a.submit {
+	float: left;
+	text-align: center;
+	font-family: 'Love Ya Like A Sister', cursive;
+	font-size: 20px;
+	color: rgb(178,34,34);
+	color: rgb(255,255,255);
+	text-shadow: 1px 1px 0 #767676;
+	border-radius: 5px;
+	background: rgba(242,142,152,0.7);
+	border: 1px solid rgb(242,142,152);
+	box-shadow: 2px 2px 10px rgba(150,150,150,0.8);
+}
+
+	input.refresh:hover, a.submit:hover {
+		background: rgba(242,142,152,1);
+	}
+
+input.refresh {
+	margin-left: 15%;
+	margin-top: -0.1%;
+	padding: 2% 0;
+	width: 30%;
+}
+
+a.submit {
+	width: 40%;
+	margin-left: 2%;
+	text-decoration: none;
+	padding: 9px 0 9px 5px;
+}
+
+/*VALENTINE ONE*/
+
+.valentine {
+  width: 35%;
+  height: 20%;
+  border-radius: 5px;
+  background: rgba(222,207,184,0.8);
+  margin: 0 auto;
+  padding: 15% 0;
+  box-shadow: 5px 5px 10px rgba(150,150,150,0.8);
+}
+
+.valentine p, .share p {
+	font-size: 20px;
+	text-align: center;
+	position: relative;
+	top: 100px;
+	font-family: 'Love Ya Like A Sister', cursive;
+}
+
+
+	.share p {
+		top: 10px;
+		margin: 30px 0 30px -45px;
+		height: 50px;
+	}
+
+	.valentine p span {
+		letter-spacing: -3px;
+		margin: 6px;
+		color: rgb(255,153,133);
+	}
+
+	.valentine p span.entity {
+		text-shadow: 0.5px 0.5px 0 #16526F;
+	}
+
+	.valentine p span.tag {
+		font-size: 15px;
+		color: grey;
+	}
+
+	.valentine p span.id {
+		letter-spacing: 1px;
+		font-size: 30px;
+		text-shadow: 0.5px 0.5px 0 #16526F;
+	}
+
+	.fb-share-button {
+		display: inline;
+		position: relative;
+		top: -69px;
+		left: 750px;
+	}
+
+.heart {
+    margin: 0 auto;
+    position: relative;
+    width: 100px;
+    height: 90px;
+    top: -60px;
+    left: -45px;
+}
+.heart:before,
+.heart:after {
+    position: absolute;
+    content: "";
+    left: 100px;
+    top: 0;
+    width: 100px;
+    height: 180px;
+    background: rgb(242,142,152);
+    -moz-border-radius: 50px 50px 0 0;
+    border-radius: 50px 50px 0 0;
+    -webkit-transform: rotate(-45deg);
+       -moz-transform: rotate(-45deg);
+        -ms-transform: rotate(-45deg);
+         -o-transform: rotate(-45deg);
+            transform: rotate(-45deg);
+    -webkit-transform-origin: 0 100%;
+       -moz-transform-origin: 0 100%;
+        -ms-transform-origin: 0 100%;
+         -o-transform-origin: 0 100%;
+            transform-origin: 0 100%;
+}
+.heart:after {
+    left: 0;
+    -webkit-transform: rotate(45deg);
+       -moz-transform: rotate(45deg);
+        -ms-transform: rotate(45deg);
+         -o-transform: rotate(45deg);
+            transform: rotate(45deg);
+    -webkit-transform-origin: 100% 100%;
+       -moz-transform-origin: 100% 100%;
+        -ms-transform-origin: 100% 100%;
+         -o-transform-origin: 100% 100%;
+            transform-origin :100% 100%;
+}	
+
+/*VALENTINE TWO*/
+
+.valentine2 {
+		width: 60%;
+		background: rgba(47,170,160,0.9);
+		border-radius: 10px;
+	}
+
+	.valentine2 h1 {
+		border: 3px solid white;
+		color: white;
+		text-shadow: 1px 1px 0 #16526F;
+		padding: 10px;
+		margin: 0 100px;
+	}
+
+	span.autocomplete {
+		color: rgba(255,255,255,0.6);
+	}
+
+	@-webkit-keyframes blinker {  
+	  from { opacity: 1.0; }
+	  to { opacity: 0.0; }
+	}
+	.blink {
+	  -webkit-animation-name: blinker;  
+	  -webkit-animation-iteration-count: infinite;  
+	  -webkit-animation-timing-function: cubic-bezier(1.0,0,0,1.0);
+	  -webkit-animation-duration: 1s; 
+	}	
+
+/*VALENTINE THREE*/		
+
+.valentine3 {
+	width: 40%;
+	border: none;
+	background: rgba(211,201,90,1);
+	text-align: center;
+	border-radius: 10px;
+} 
+
+	.valentine3 h1 {
+		padding: 10px;
+		width: 80%;
+		margin: 0 auto;
+		color: rgb(146,128,155);
+		text-shadow: 1px 1px 0 #16526F;
+	}
+
+	span.code {
+		color: rgb(196,98,98);
+		font-size: 40px;
+	}
+
+/*VALENTINE FOUR*/
+
+.valentine4 {
+	background: rgb(253,122,174);
+	position: relative;
+	border-radius: 10px;
+}
+
+.valentine4 p {
+	color: rgb(253,248,122);
+	text-shadow: 1px 1px 0 #16526F;
+	padding: 0 25px;
+	position: absolute;
+	font-size: 30px;
+}
+
+	.valentine4 p.first {
+		top: 0;
+		left: 0;
+	}
+
+	.valentine4 p.second {
+		top: 40px;
+		left: 35px;
+	}
+
+	.valentine4 p.third {
+		top: 75px;
+	}
+
+	.share4 {
+		margin-bottom: 100px;
+	}
+
+/*VALENTINE FIVE*/
+
+.valentine5 {
+	background: rgba(170,153,204,0.8);
+	position: relative;
+	width: 60%;
+	border-radius: 10px;
+}	
+
+	.valentine5 h1 {
+		color: white;
+		font-size: 44px;
+		text-align: center;
+	}
+
+	.valentine5 span.brackets {
+		color: rgb(206,50,37);
+	}
+
+/*VALENTINE SIX*/
+
+.valentine6 {
+	width: 54%;
+	text-align: center;
+	background: rgb(245,250,175);
+	text-shadow: 1px 1px 0 #16526F;
+	margin-top: 0.5%;
+}	
+
+.valentine6 h1 {
+	position: relative;
+	z-index: 5;
+	color: rgb(188,204,163);
+	position: relative;
+	top: -60px;
+	left: 20px;
+	-webkit-transform: rotate(-20deg);
+	-moz-transform:    rotate(-20deg);
+	-ms-transform:     rotate(-20deg);
+	-o-transform:      rotate(-20deg);
+}
+
+.heart2 {
+    width: 100px;
+    height: 90px;
+    top: -60px;
+    left: -20px;
+}
+.heart2:before,
+.heart2:after {
+	width: 150px;
+	height: 250px;
+    background: rgb(230,57,41);
+    border-radius: 90px 90px 0 0;
+}
+
+.heart2:before {
+	left: 70px;
+    top: 0;
+}
+
+.heart2:after {
+	left: -80px;
+    top: 0;
+}
+
+/*SUBMIT PAGE*/
+
+.wrapperSubmit {
+ 	width: 35%;
+ 	margin: 5% auto;
+ 	background: rgba(242,142,152,0.7);
+ 	box-shadow: 2px 2px 10px rgba(150,150,150,0.8);
+ 	border-radius: 10px;
+ 	padding: 1%;
+ 	position: relative;
+}
+
+.wrapperSubmit h1, p.instruction {
+	text-align: center;
+	margin: 1% auto;
+}
+
+p.instruction {
+	width: 80%;
+	color: rgba(100,100,100,0.7);
+	margin-bottom: 3%;
+}
+
+textarea {
+	width: 100%;
+	margin: 0 auto;
+	border-radius: 5px;
+}
+
+	textarea:focus {
+		border: rgba(47,170,160,0.9);
+	}
+
+input#ss-submit {
+	width: 100%;
+	margin: 10px auto 0;
+	clear: both;
+	background: rgba(47,170,160,0.9);
+	border: none;
+	box-shadow: none;
+	color: white;
+	font-family: 'Love Ya Like A Sister','Helvetica', 'Arial', sans-serif;
+	padding: 10px 20px;
+	font-size: 20px;
+	border-radius: 5px;
+	text-decoration: none;
+}
+
+	a.send:hover, input:hover {
+		background: rgba(47,170,160,0.6);
+	}
+
+h6 {
+	font-size: 40px;
+	position: absolute;
+	bottom: -38%;
+	right: -5%;
+	-webkit-transform: rotate(90deg);
+	-moz-transform: rotate(90deg);
+}	
+
+	h6 a {
+		text-decoration: none;
+		color: rgb(47,170,160);
+	}
+
+	h6 a:hover {
+		font-size: 50px;
+	}
+
+.footer {
+	text-align: center;
+	color: rgba(47,170,160,0.9);
+	font-size: 10px;
+	position: fixed;
+	bottom: 1%;
+	right: 1%;
+}
+
+	.footer a {
+		color: tomato;
+		text-decoration: none;
+	}
